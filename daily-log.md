@@ -3,7 +3,7 @@
 ---
 
 ## Day 1
-**Date:** _(fill date)_
+--Date-09/01/2026
 
 ### ✅ What I did
 - Completed Python basics video (syntax, variables, data types)
@@ -17,10 +17,9 @@
 - Difference between `=` and `==`
 
 ### ⏳ Time Spent
-- Watch: ~1.75 hr
-- Practice: ~0.75 hr
+- Watch: ~2 hr
+- Practice: ~1 hr
 - Git & review: ~0.5 hr
 
-### 🔁 Tomorrow
-- Loops and Lists
-- Logic-heavy practice
+### 🔁 Tommorow 
+-First target is increase study hour
