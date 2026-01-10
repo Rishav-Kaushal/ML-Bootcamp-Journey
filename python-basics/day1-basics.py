@@ -3,7 +3,7 @@
 ##Day 1-------Python Basics--------------------------------
 
 #Variables and Data Types------
-
+''''
 age=20
 name="Rishav"
 height=5.11
@@ -82,7 +82,7 @@ else:
     else:
         print("Number is odd")
 #Practice Problems
-
+'''
 #1. Determine if a year is a leap year or not.
 print("Leap Year")
 year=int(input("Enter a year:"))
@@ -99,4 +99,24 @@ else:
     print(year,"is not a leap year")
 
 #2. Simple calc making to all add diff multi div
+print("Simple Calculator")
+num1=int(input("Enter 1st no:"))
+num2=int(input("Enter 2nd no:"))
+
+op=int(input("Enter numbers as: Addition-1,Subtration-2,Multiplication-3,Division-4:"))
+
+if op in [1,2,3,4]:
+    if(op==1):
+        print("Sum of num1 & num2",num1+num2)
+    elif(op==2):
+        print("substration of num1 & num2",num1-num2)
+    elif(op==3):
+        print("multiplication of num1 & num2",num1*num2)
+    elif(op==4):
+        if(num2!=0):
+            print("division of num1 & num2",num1/num2)
+        else:
+            print("Can't divide by zero")
+else:
+    print("Ínvalid Operator")
 
