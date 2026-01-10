@@ -3,7 +3,7 @@
 ##Day 1-------Python Basics--------------------------------
 
 #Variables and Data Types------
-''''
+
 age=20
 name="Rishav"
 height=5.11
@@ -82,7 +82,7 @@ else:
     else:
         print("Number is odd")
 #Practice Problems
-'''
+
 #1. Determine if a year is a leap year or not.
 print("Leap Year")
 year=int(input("Enter a year:"))
