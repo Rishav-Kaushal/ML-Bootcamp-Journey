@@ -22,10 +22,12 @@ float_str=float(str)
 print("float_str=",float_str,type(float_str))
  
 #Basic Input and Output
+print("Now Basic Input Ouput")
 num=input("Enter a no:")
 print(num,type(num))
 
 #Simple calculator
+print("Simple Calc")
 num1=int(input("Enter 1st no:"))
 num2=int(input("Enter 2nd no:"))
 sum=num1+num2
@@ -42,9 +44,9 @@ print("Division=",divison)
 #Arithmetic Operators
 a=10 
 b=3 #sum diff prod div is done above
-print(a, "to the power", b, ":", a**b)
-print(a, "floor division", b, ":", a//b)
-print(a, "mod", b, ":", a%b)
+print(num1, "to the power", num2, ":", num1**num2)
+print(num1, "floor division", num2, ":", num1//num2)
+print(num1, "mod", num2, ":", num1%num2)
 
 #Comparison Operators(==, !=, >, <, >=, <=)--outputs boolean 
 #Logical Operators(and, or, not)
@@ -56,6 +58,7 @@ print("x or y:", x or y)
 
 # if, elif, else
 #here we use colons after condition
+print("Traffic light basic ques")
 color="y"
 if color=="g":
     print(color, "is green so go")
@@ -65,6 +68,7 @@ else:
     print(color, "is yellow so get ready")
 
 #nested if
+print("Nested if")
 num=int(input("Enter a no:"))
 if num<=0:
     if num==0:
@@ -80,7 +84,7 @@ else:
 #Practice Problems
 
 #1. Determine if a year is a leap year or not.
-
+print("Leap Year")
 year=int(input("Enter a year:"))
 
 if(year%4==0):
