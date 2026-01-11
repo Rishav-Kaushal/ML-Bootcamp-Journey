@@ -1,4 +1,4 @@
-# ML Bootcamp Journey 🚀
+# ML Bootcamp Journey, Let's Do it!! 🚀
 
 This repository documents my step-by-step learning journey in **Machine Learning & AI**.
 The goal is to build strong foundations in **Python, Data Analysis, and ML**, with
@@ -37,6 +37,7 @@ A Python program to:
 
 ## 📈 Progress Tracking
 Daily progress is logged in **daily-log.md**.
+This is my journal
 
 ---
 

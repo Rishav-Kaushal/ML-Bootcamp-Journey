@@ -35,8 +35,9 @@
 
 ### 🧠 Key Learnings
 - loop comprenhension with consition 
-- in whilw loop it only take just control range
+- in while loop it only take just control range
 - all functions and methods under list
+- Loop Control
 
 ### ⏳ Time Spent
 - Watch: ~3 hr
@@ -44,4 +45,4 @@
 - Git & review: ~0.5 hr
 
 ### 🔁 Tommorow 
--First target is increase study hour 
+-Start CSV + dictionary based project
