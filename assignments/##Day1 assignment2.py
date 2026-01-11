@@ -1,7 +1,7 @@
 ##Day1 Assignment of conditional
 
 #1. simple if elif else
-'''
+
 num=float(input("Enter a number:"))
 
 if num>0:
@@ -91,7 +91,7 @@ if num>1:
         else:
             print("Yes it is a prime no")
 
-'''
+
 #11. Fibonacci sequence
 
 num=int(input("Enter a no.:"))
