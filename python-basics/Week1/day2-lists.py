@@ -44,15 +44,15 @@ print(numbers[::2]) #all but with step 2
 print(numbers[::-1]) #all from end step 1
 print(numbers[::-2]) #all from end step 1
 
-#Iterating over list
+# Iterating over list
 
-for n in numbers:  #NO bracket
+for n in numbers:  # NO bracket
     print(n)
-for idx,number in enumerate(numbers):  #enumerate is built fun used to have both same time
+for idx,number in enumerate(numbers):  # enumerate is built fun used to have both same time
     print(idx,number)
 
-#Comprehensive List
-#syntax--[output     operation   condition]
+# Comprehensive List
+# syntax--[output     operation   condition]
 
 list=[]
 for n in range(11):
@@ -62,12 +62,12 @@ print("list=", list)
 newlist=[n**3 for n in range(11)]  #this is comprehension
 print("newlist=", newlist)         
 
-#Comprehension with conditions
+# Comprehension with conditions
 
 square=[num**2 for num in range(20) if num%2==0]
 print(square)
 
-#Nested Comprehension
+# Nested Comprehension
 
 lst1=[1,2,3]
 lst2=['a','b','c']
@@ -78,3 +78,12 @@ print(pair)
 words=['hello','world','rishav','kaushal']
 
 print([len(k) for k in words])
+
+#Q. Duplicates remove from list
+nums=[1,4,3,2,3,2,3,5,7,7]
+unique=[]
+
+for i in nums:
+    if i not in unique: #important for duplicates
+        unique.append(i)
+print(unique)
