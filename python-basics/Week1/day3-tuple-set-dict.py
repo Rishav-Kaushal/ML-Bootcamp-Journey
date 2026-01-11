@@ -1,0 +1,134 @@
+##Day3------tuple & set & dict ----------------------------------------
+
+
+##Tuple in python-----------------------
+'''
+tpl1=()
+print(type(tuple))
+lst=list()
+tpl=tuple()
+print(type(lst))
+print(type(tpl))
+
+num=tuple([1,2,3,4,5,6]) #list to tuple 
+print(num) 
+
+mixed_tuple=(1,"str",4.6,True)
+
+#all indexing and slicing same as list
+#bracket should be big in this also
+num1=num[::-1]
+print(num1)
+
+a= num + mixed_tuple*3 #Concatenation with 3 times multiply
+print(a)
+
+#num[1]=4  # error TypeError
+
+#Tuple methods
+num.count(1) #cont no of times 1 present .
+num.index(3) # find which idx(first) has 3 present.
+
+#Packing & Unpacking of tuple 
+packed_tpl=1,"hii",4.3  
+print(packed_tpl)
+
+a,b,c=packed_tpl #unpacking
+print(a)
+print(b)
+print(c)
+
+num2=(1,2,3,4,5,6)
+
+first,*middle,last=num2 #unpacking with *
+print(first)
+print(middle) #output is list
+print(last)
+
+#Nested Tuple & List
+nested_list=[[1,2,3],[4,5,6],(7,"str",4.5)] #possible
+nested_tuple=((1,2,3),("a","b","c"),(7,8,9)) #here (1,2,3) is one and at idx 0
+
+nested_list[0] #[1,2,3]
+print(nested_list[2][:3])
+print(nested_tuple[1])
+
+#iterating in tuple
+
+for sub_tuple in nested_tuple:
+    for item in sub_tuple:
+        print(item,end=" ")
+    print()
+
+'''
+##Sets In Python--------------------- 
+
+my_set={1,2,3,4,5}
+print(my_set)
+print(type(my_set))
+empty_set=set()
+print(type(empty_set))
+
+set1=set([1,2,2,3,4,55]) #set only take one value here we given as list
+print(set1)              #duplicates remove
+print(type(empty_set))
+
+#Basics Sets Ops
+
+my_set.add(7) #add 
+my_set.remove(1) #remove
+print(my_set)
+#my_set.remove(10) #give type error
+my_set.discard(10) #if not present it didnt give any error
+removed=my_set.pop() # first remove
+print(removed)
+my_set.clear() #clear the set
+
+
+#Set membershpip test---"in"
+my_set={1,2,3,4,5}
+
+print(3 in my_set)
+print(10 in my_set)
+
+#Maths ops
+set1={1,2,4,8,9,34,56}
+set2={2,4,6,3,34,5}
+
+union_set=set1.union(set2)
+print(union_set)
+inter_set=set1.intersection(set2)
+print(inter_set)
+
+diff_set=set1.difference(set2) #uncommon elements of set1 it also have difference_update
+print(diff_set)
+symmdiff_set=set1.symmetric_difference(set2)  #all elements that is not common
+print(symmdiff_set)
+set1.intersection_update(set2)  #set1 updated as intersection set1 is intersection 
+
+set1.issubset(set2)    #T & F
+set1.issuperset(set2)  #T & F
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
