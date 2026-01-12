@@ -146,20 +146,66 @@ print(values)
 items=student.items() #all the key value pair
 print(items) #output is list of tuples
 
+student_copy=student 
+print(student)
+print(student_copy) #same value
+student["name"]="Kaushal1"
+print(student)
+print(student_copy) #here also changed its a problem because we cant make copy of past
 
+#shallow copy
+student_copy1=student.copy() #now its a shallow copy here changes in student dont happen
 
+student["name"]="Kaushal2"
+print(student)
+print(student_copy1) #stays same its shallow copy
 
+#iterating over dict by loops
 
+#over keys
 
+for keys in student.keys(): #here bracket needed
+    print(keys)
+for items in student.items(): #here bracket needed
+    print(items)  #all items that is key value pair
+for key,value in student.items(): #same  
+    print(key,":",value)
 
+#Nested dictionaries  #sample of mongodb
+students={
+    "student1":{"name":"Rishav","age":20},
+    "student2":{"name":"Sagar","age":17},
+}
+print(students)
+print(students["student2"]["name"]) #access nested value
 
+for student_id,student_info in students.items(): #just via items can take all values
+    print(f"{student_id}:{student_info}")
+    for key,value in student_info.items(): #as all key value present in info(2nd part)
+        print(f"{key}:{value}")
 
+#Dictionary Comprehension with conditions
+squares={i:i**2 for i in range(11)   if i%2==0}
+print(squares)
 
+#Practical examples
+#use a dict to count the freq of elements in list
 
+number=[1,3,3,1,4,5,4,5,3,5,1,2,2]
+freq={} 
 
+for num in number: #simple but have to think
+    if num in freq:
+        freq[num]+=1
+    else:
+        freq[num]=1
+print(freq)
 
+dict1={"a":1,"b":2} 
+dict2={"c":3,"d":4}
 
-
+merged_dict={**dict1,**dict2}  #mergeing
+print(merged_dict)
 
 
 
