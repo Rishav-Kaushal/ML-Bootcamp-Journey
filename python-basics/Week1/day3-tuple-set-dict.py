@@ -60,7 +60,7 @@ for sub_tuple in nested_tuple:
         print(item,end=" ")
     print()
 
-'''
+
 ##Sets In Python--------------------- 
 
 my_set={1,2,3,4,5}
@@ -109,10 +109,42 @@ set1.intersection_update(set2)  #set1 updated as intersection set1 is intersecti
 set1.issubset(set2)    #T & F
 set1.issuperset(set2)  #T & F
 
+'''
+##Dictionaries in python---------------
+#unordered collection,mutable,key-value
 
+#Create dict
+#list=[],tuple=(),
+empty_dict={}
+empty_dict1=dict() #also
+print(type(empty_dict))
+print(type(empty_dict1))
 
- 
+student={"name":"Rishav","age":20,"grade":98,"name":"Kaushal"}
+print(student)  #key should be unique otherwise it take recent 
 
+#accessing
+student={"name":"Rishav","age":20,"grade":98,"name":"Kaushal"}
+
+print(student['grade'])
+print(student.get('name')) #also if key not present its none
+print(student.get("dhhf","Not Present")) #output is Not prsent in case key is missing
+
+#Modifying Dict
+student['name']="sagar"
+student['age']=17            #update
+student['address']="Deoghar" # added
+
+del student['grade'] #this delete that key value
+print(student)
+
+#Dictionary Methods
+keys=student.keys()  #get all the keys
+print(keys) 
+values=student.values() #get all the values
+print(values) 
+items=student.items() #all the key value pair
+print(items) #output is list of tuples
 
 
 
