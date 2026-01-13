@@ -2,7 +2,7 @@
 
 
 ##Tuple in python-----------------------
-'''
+
 tpl1=()
 print(type(tuple))
 lst=list()
@@ -109,7 +109,7 @@ set1.intersection_update(set2)  #set1 updated as intersection set1 is intersecti
 set1.issubset(set2)    #T & F
 set1.issuperset(set2)  #T & F
 
-'''
+
 ##Dictionaries in python---------------
 #unordered collection,mutable,key-value
 

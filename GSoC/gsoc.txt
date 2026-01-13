@@ -1,0 +1,65 @@
+### GSoC prep checklist (Rishav)
+- Week1: repo starter, git workflow, first PR (docs)
+- Week2: pandas + pipeline + PR
+- Week3: sklearn foundations + example
+- Week4: OSS PRs (2)
+- Week5: NLP mini-project (BoW/TF-IDF)
+- Week6: package + CI + tests
+- Week7: medium OSS PR + polish
+- Week8: Proposal draft + mentor outreach
+
+Wo tumse kya chahte hain:
+
+Python dev jo:
+
+data pipelines samjhta ho
+
+APIs samjhta ho
+
+tests likh sake
+
+docs improve kare
+
+examples banaye
+
+bugs fix kare
+
+👉 Isko bolte hain: ML-oriented Python developer
+
+##ML Infra and Tooling Contributor
+
+Wo tumse kya chahte hain:
+
+Python dev jo:
+
+data pipelines samjhta ho
+
+APIs samjhta ho
+
+tests likh sake
+
+docs improve kare
+
+examples banaye
+
+bugs fix kare
+
+👉 Isko bolte hain: ML-oriented Python developer
+
+AB TUM KIS TYPE KA KAAM KAROGE (IMPORTANT)
+
+Tum YE KAAM KAROGE, aur YE BILKUL VALID HAI GSoC KE LIYE:
+
+✅ Documentation improvements
+✅ Example notebooks / scripts
+✅ Small bug fixes
+✅ Tests for examples
+✅ Tutorials cleanup
+
+⚠️ NOT:
+
+core algorithms
+
+math-heavy code
+
+model internals
