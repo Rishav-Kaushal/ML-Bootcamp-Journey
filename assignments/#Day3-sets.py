@@ -2,7 +2,7 @@
 
 #1.
 my_set = set(i for i in range(1,11))  #here inside range its comma
-print(my_set)
+print(my_set)  #set=set(range(1,11)) #simple
 
 #2.
 my_set.add(11)
@@ -13,10 +13,11 @@ print(my_set)
 set1 = set(i for i in range(1,6))
 set2 = set(i*2 for i in range(1,6))
 
-union_set = set1.union(set2)
-intersection_set = set1.intersection(set2)
-diff_set = set1.difference(set2)
-symmdiff_set = set1.symmetric_difference(set2)
+union_set = set1.union(set2) #set1|set2 also
+intersection_set = set1.intersection(set2) #set1&set2 also
+diff_set = set1.difference(set2) #set1-set2 also
+symmdiff_set = set1.symmetric_difference(set2) #set1^set2 also
+
 print(union_set)
 print(intersection_set)
 print(diff_set)
@@ -55,8 +56,13 @@ list.append(6)
 re_set=set(list)     #list into set
 print(re_set)
 
-#10.
-
+#10.  set to dictionary method is frozenset
+dict={
+    frozenset({1,2}):3,
+    frozenset({3,4}):7,
+    frozenset({7,3}):10
+}
+print(dict)
 
 #11.
 set={1,2,3,4,5,6,7,8,9}
