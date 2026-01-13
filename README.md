@@ -52,3 +52,7 @@ This repository reflects **real learning with real code**, not just certificates
 ## 📸 Day 2 Output
 
 ![Day 2 Output](assets/day2_output.png)
+
+## 📸 Day 3 Output
+
+![Day 3 Output](assets/day3_output.png)
