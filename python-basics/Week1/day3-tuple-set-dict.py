@@ -135,6 +135,7 @@ print(student.get("dhhf","Not Present")) #output is Not prsent in case key is mi
 student['name'] = "sagar"
 student['age'] = 17            #update
 student['address'] = "Deoghar" # added
+#student.pop('') #removed
 
 del student['grade'] #this delete that key value
 print(student)

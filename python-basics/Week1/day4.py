@@ -5,11 +5,13 @@
 #Read a whole
 with open('example.txt','r') as file:
     for content in file:
-        print(content)
+        print(content,end = "")
+    print()
+        
 #Read line by line
 with open('example.txt','r') as file:
     for line in file:
-        print(line.strip()) #strip remove new line chara
+        print(line.strip()) #strip remove new line character
 #writing a file(overwriting)
 with open('example.txt','w') as file:
     file.write("It's RK\n")
@@ -25,25 +27,37 @@ with open('example.txt','a') as file:
 #Binary bin file
 #writing to a bin file #as 'wb'
 
-data=b'Hello this is bin filw'
+data = b'Hello this is bin file'
 with open('example.bin','wb') as file:
     file.write(data)
-    print(content)
 
 #reading a binary file  #as 'rb'
 with open('example.bin','rb') as file:
-    content=file.read()
+    content = file.read()
     print(content)
 
 #read the content from the source text file and write to a destination text file
 
 with open('example.txt','r') as source_file:
     content=source_file.read()
-with open('destination_file.txt','w') as destination_file:  # auto add this folder
+with open('destination_file.txt','w') as destination_file:  # auto add this file
     destination_file.write(content)
 
-#Assignment 
+#Assignment-------------------- 
 #read a txt file and count the no of lines and words and charaters 
+with open('example.txt','r') as file:
+    content = file.read()
+char_count = len(content)
+
+freq1 = 0
+for i in content:
+    if i == "\n":  #for counting next line
+        freq1 += 1
+
+print(content)
+print("Total Words:", len(content.split()))  #take care of all multiple spaces& \t tab new line 
+print("Total lines:", freq1+1)
+print("total charaters:",char_count) ##as spaces and everthing is charater
 
 #Writing and then reading a file 
 with open('example.txt', "w+") as file: #w+ is for both r and w and if file not present it created if excits its truncated
@@ -53,35 +67,35 @@ with open('example.txt', "w+") as file: #w+ is for both r and w and if file not 
     file.seek(0) #file cursor to 0, if not this no output 
 
     ##Read the content 
-    content=file.read()
+    content = file.read()
     print(content)
 
 import os
 ##create a new directory
-new_directory="package"
+new_directory = "package"
 ##os.mkdir(new_directory)
 print(f"Directory'{new_directory}' created")
 
 #listing files and directories
-items=os.listdir('.') #. means current folder
+items = os.listdir('.') #. means current folder
 print(items)
 
 ##Joining Paths
-
-dir_name="folder"
-file_name="file_txt"
-full_path=os.path.join(dir_name,file_name)
+dir_name = "folder"
+file_name = "file_txt"
+full_path = os.path.join(dir_name,file_name)
 print(full_path)
-full_path=os.path.join(os.getcwd(),dir_name,file_name)
+full_path = os.path.join(os.getcwd(),dir_name,file_name)  #complete path
 print(full_path)
 
 #checking for file
-path='example.txt'
+path = 'example.txt'
 if os.path.exists(path):
     print(f"The Path '{path}' exists.")
 else:
     print(f"The path '{path}' does not exists.")
-#checking file aor direc or neither
+    
+#checking file or direc or neither
 if os.path.isfile(path):
     print(f"yes '{path}' is a file")
 elif os.path.isdir(path):
@@ -91,7 +105,7 @@ else:
 
 #getting the absolute path
 
-relative_path='example.txt'
-absolute_path=os.path.abspath(relative_path)
+relative_path = 'example.txt'
+absolute_path = os.path.abspath(relative_path)
 
 print(absolute_path)
