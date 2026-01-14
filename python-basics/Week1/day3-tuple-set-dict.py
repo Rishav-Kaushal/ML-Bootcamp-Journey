@@ -110,6 +110,12 @@ set1.intersection_update(set2)  #set1 updated as intersection set1 is intersecti
 set1.issubset(set2)    #T & F
 set1.issuperset(set2)  #T & F
 
+#counting unique words in text
+text="in this tutorial i am learning about sets"
+words = text.split() #all words split
+unique_words = set(words)
+print(unique_words)
+print(len(unique_words))
 
 ##Dictionaries in python---------------
 #unordered collection,mutable,key-value
