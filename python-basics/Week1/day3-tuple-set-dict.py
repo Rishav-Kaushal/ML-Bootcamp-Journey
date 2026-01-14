@@ -16,6 +16,7 @@ print(num)
 mixed_tuple = (1,"str",4.6,True)
 
 #all indexing and slicing same as list
+#for indexing convert to list then revert
 #bracket should be big in this also
 num1 = num[::-1]
 print( num1 )
@@ -78,7 +79,7 @@ print(type(empty_set))
 my_set.add(7) #add 
 my_set.remove(1) #remove
 print(my_set)
-#my_set.remove(10) #give type error
+my_set.remove(3) #give type error
 my_set.discard(10) #if not present it didnt give any error
 removed = my_set.pop() # first remove
 print(removed)
