@@ -1,4 +1,4 @@
-##Day3 assignment----------set------------------------------
+##Day1_Assignment----------------------Set---------------------------------------------------------------------------
 
 #1.
 my_set = set(i for i in range(1,11))  #here inside range its comma

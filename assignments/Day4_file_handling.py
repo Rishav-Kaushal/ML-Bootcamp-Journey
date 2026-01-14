@@ -1,4 +1,4 @@
-##Day4------file handling--------------------------
+##Day4_Assignment------------------------File_Handling--------------------------------------------------------------
 
 #1.
 with open('sample.txt','r') as f:
@@ -70,7 +70,7 @@ with open('source.txt','r') as f:
             c += 1
     print("Total char:",len(content))
     print("Total words:",len(content.split()))
-    print("Total lines",c+1)
+    print("Total lines",c+1) #len(f.readlines())
 
 #9.
 with open('source.txt','r') as f:
@@ -85,12 +85,25 @@ with open('op.txt','r') as f:
     fol=f.read()
     print(fol)
 
-#10.
+#10.  ## reread to understand
+def split_file(filename, lines_per_file):
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+    for i in range(0, len(lines), lines_per_file):
+        with open(f'{filename}_part{i//lines_per_file + 1}.txt', 'w') as part_file:
+            part_file.writelines(lines[i:i + lines_per_file])
+            
+split_file('sample.txt', 100)
 
+#11. to write a log file & write log mess with timestamps
+import datetime
 
-#11.
-
-
+def log_message(message, filename='activity.log'):
+    ts = datetime.datetime.now().isoformat()
+    with open(filename, 'a') as file:
+        file.write(f"[{ts}] {message}\n")
+        print(file)
+log_message('This a log message.')
 #12.
 with open('image.bin','r') as b:
     content = b.read()
@@ -107,9 +120,24 @@ with open('data.csv','r') as c:
         a,b = line.strip().split(',') #strip remove new line char
         dict[a] = b
 print(dict)
-
+'''
 #14.
 import json
 
+def read_json(filename):
+    with open(filename, 'r') as file:
+        data = json.load(file)
+        return data
 
+print(read_json('data.json'))
+'''
 #15.
+def read_protected_file(filename):
+    try:
+        with open(filename, 'r') as file:
+            print(file.read())
+    except PermissionError as e:
+        print(f"Permission error: {e}")
+
+read_protected_file('source.txt')
+

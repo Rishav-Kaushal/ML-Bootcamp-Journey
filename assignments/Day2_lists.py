@@ -1,4 +1,4 @@
-##Day 2 assignments of Lists
+##Day2_Assignment----------------------List--------------------------------------------------------------
 
 #1.
 list1=[i for i in range(1,21)]
@@ -28,7 +28,7 @@ randomlist=[1,5,8,3,23,5,77,4,6]
 
 randomlist.sort() # becomes asending
 randomlist.reverse() # becomes decending
-                     #????? HOW TO REMOVE DUPLICATES??
+                     #????? HOW TO REMOVE DUPLICATES??---make set then revert
 print(randomlist)
 
 #7.
