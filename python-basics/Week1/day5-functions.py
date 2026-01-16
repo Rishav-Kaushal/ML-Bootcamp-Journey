@@ -213,5 +213,5 @@ def age_greater_than_18(person):
 abc=list(filter(age_greater_than_18,people))
 print(abc)
 
-##it is a powerful tool for creating iterators that filter items outt of an iterable based on a func, used for data cleaning, filtering objects, removing unwanted elements from list
+#it is a powerful tool for creating iterators that filter items outt of an iterable based on a func, used for data cleaning, filtering objects, removing unwanted elements from list
 
