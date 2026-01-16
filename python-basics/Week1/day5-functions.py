@@ -58,7 +58,7 @@ def temp_conv(temp,unit):
     if unit == 'C':
         return temp * 9/5 + 32
     elif unit == 'F':
-        return (temp-31)*5/9
+        return (temp-32)*5/9
     else:
         return None
 print(temp_conv(25,'C'))
@@ -185,7 +185,7 @@ print(list12)
 
 ##Filter function -----------------------------------------------------------
 #it constructs an iiterator from elements of an interable for which a function returns true 
-#used to filter out ite,s froma list(any iterable) based upon condition
+#used to filter out it's from a list(any iterable) based upon condition
 
 def even(num):
     if num%2 == 0 :
@@ -205,11 +205,13 @@ print(even_and_greater_than_five)
 #filter with dict
 people=[
     {'name':'Rishav','age':21},
-    {'name':'Kaushal','age':20}
+    {'name':'Kaushal','age':17},
+    {'name':'Sagar','age':21}
 ]
-def age_greater_than_25(person):
+def age_greater_than_18(person):
     return person['age']>18
-abc=list(filter(age_greater_than_25,people))
+abc=list(filter(age_greater_than_18,people))
 print(abc)
 
 ##it is a powerful tool for creating iterators that filter items outt of an iterable based on a func, used for data cleaning, filtering objects, removing unwanted elements from list
+

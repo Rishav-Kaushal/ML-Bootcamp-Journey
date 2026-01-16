@@ -1,7 +1,0 @@
-creation 
-pure form 
-
-fork to github
-
-pull request 
-github leetcode
