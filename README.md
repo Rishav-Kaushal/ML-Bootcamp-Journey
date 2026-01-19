@@ -43,6 +43,7 @@ This is my journal
 
 ## 🙌 Note
 This repository reflects **real learning with real code**, not just certificates.
+Yes Lets Do it!!
 
 
 ## 📸 Day 1 Output
