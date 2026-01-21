@@ -62,3 +62,6 @@ Yes Lets Do it!!
 
 ![Day 4 Output](assets/day4_output.png)
 
+## 📸 Day 5 Output
+
+![Day 5 Output](assets/day5_output.png)
