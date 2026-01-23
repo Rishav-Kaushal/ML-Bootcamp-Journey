@@ -2,8 +2,8 @@
 
 #List
 
-list=["rishav","kaushal",1,2.4,True] #diff data 
-print(list)
+list1=["rishav","kaushal",1,2.4,True] #diff data 
+print(list1)
 
 fruits=["apple","mango","kiwi","pineapple","banana"]
 
@@ -54,10 +54,10 @@ for idx,number in enumerate(numbers):  # enumerate is built fun used to have bot
 # Comprehensive List
 # syntax--[output     operation   condition]
 
-list=[]
+listtss=[]
 for n in range(11):
-    list.append(n**3)
-print("list=", list)
+    listtss.append(n**3)
+print("list=", listtss)
 
 newlist=[n**3 for n in range(11)]  #this is comprehension
 print("newlist=", newlist)         
