@@ -1,6 +1,0 @@
-It's RK
-This is a new
-writing withour overwrite
-first line
-second line
-third line
