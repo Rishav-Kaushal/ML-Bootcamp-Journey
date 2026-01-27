@@ -36,4 +36,6 @@ except ZeroDivisionError:
 except Exception:
     print(Exception)
 else: #this will run only when there is no exception if there is exception handled then it is no run 
-    print("hey the result is ",result)
+    print("Hey, The result is ",result)
+finally:
+    print("Program completed!!")
