@@ -41,9 +41,7 @@ finally: ##this will run always always always #to close the program
     print("Program completed!!")
 '''
 ###File Handling and Exception handling
-git add .
-git commit -m"added"
-git push
+
 try:
     file = open('example.txt','r')
     content = file.read()
@@ -57,9 +55,3 @@ finally:
     if 'file' in locals() and not file.closed():
         file.close()
         print('file close')
-
-
-
-
-
-
