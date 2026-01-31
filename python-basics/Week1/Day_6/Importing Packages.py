@@ -28,7 +28,7 @@ print(maths.adds(2,7))
 
 ##can create subpackages in the packages folder also in subpackages their should be __init__.py
 #intersting that how to take packages
-from package.subpackages.mult import multi
+from package.subpackages.multiply import multi
 
 print(multi(3,7))
 
