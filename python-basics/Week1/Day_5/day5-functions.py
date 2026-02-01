@@ -116,20 +116,38 @@ print(fact(5))
 
 def count_word_freq(file_path):
     word_count = {}
-    with open(file_path,'r') as f:
-        for line in f:
-            words = line.split() # split by spaces
-            for word in words:
-                word = word.lower().strip('.,!?:;"\'/')
-                word_count[word]=word_count.get(word,0)+1  #get means if find the "word" if not then 0
-    return word_count
+    try:
+        with open(file_path,'r') as f: #with used so it close automatic and memory didnt leak
+            for line in f:
+                words = line.split() # split by spaces
+                print(words)
+                for word in words:
+                    word = word.lower().strip('.,!?:;"\'/')
+                    word_count[word]=word_count.get(word,0)+1  #get means if find the "word" then value if not then 0
+        return word_count
+    except FileNotFoundError:
+        print("File is not present.")
+        return {} # so print count word mai none nhi aaega
 
 file_path='destination_file.txt'
 print(count_word_freq(file_path))
 
 #7. Validate email address
-
-
+def emailverify(email):
+    if len(email)<5:
+        return False
+    if email.count('.')!=1:
+        return False
+    if email.count('@')!=1:
+        return False    
+    username,domain=email.split('@')
+    if not username or not domain:
+        return False
+    if domain.startswith('.') or domain.endswith('.'):
+        return False
+    return True 
+print(emailverify("abc@gmail.co"))  
+print(emailverify("@gmsil.yahho.in"))  
 
 ##Lambda Functions----------------------------------------------------
 #small anonymous func, any no of args but only 1 expression , required lambda func
@@ -171,7 +189,7 @@ words=['apple','banana','cherry']
 upper_word=list(map(str.upper,words))
 print(upper_word)
 
-
+"""
 def get_name(person):
     return person['name']
 
@@ -214,3 +232,5 @@ abc=list(filter(age_greater_than_18,people))
 print(abc)
 
 #it is a powerful tool for creating iterators that filter items outt of an iterable based on a func, used for data cleaning, filtering objects, removing unwanted elements from list
+
+"""

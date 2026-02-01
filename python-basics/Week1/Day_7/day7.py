@@ -56,9 +56,3 @@ finally:
         file.close()
         print('file close')
 
-
-
-
-
-
-
