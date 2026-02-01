@@ -12,13 +12,13 @@ evenodd(234)
 
 def  add(a,b): #with multiple parameters
     """This function add two given numbers"""
-    c=a+b
+    c = a+b
     return c #or return a+b directly
 
 print(add(3,6))
 
 #Default Para
-def greet(name="Guest"): #default is guest if no local para
+def greet(name = "Guest"): #default is guest if no local para
     print(f"hello, {name} Welcome here!")
 
 greet()
@@ -35,7 +35,7 @@ def print_details(**kwargs): # all arguments in key value pair
     for key,value in kwargs.items():
         print(f"{key}:{value}")
 
-print_details(name="Rishav",age="20",state="jharkhand")
+print_details(name = "Rishav",age = "20",state = "jharkhand")
 
 def print_all_details(*args,**kwargs):
     for val in args:
@@ -97,8 +97,8 @@ print(calculate_total_cost(cart))
 
 #4. check if a string is palindrome
 def is_palindrome(str):
-    str=str.lower().replace(" ","") #removing spaces
-    return str==str[::-1]
+    str = str.lower().replace(" ","") #removing spaces
+    return str == str[::-1]
 
 print(is_palindrome("a man a plan a canal panama"))
 print(is_palindrome("rishsire"))
@@ -123,7 +123,7 @@ def count_word_freq(file_path):
                 print(words)
                 for word in words:
                     word = word.lower().strip('.,!?:;"\'/')
-                    word_count[word]=word_count.get(word,0)+1  #get means if find the "word" then value if not then 0
+                    word_count[word] = word_count.get(word,0)+1  #get means if find the "word" then value if not then 0
         return word_count
     except FileNotFoundError:
         print("File is not present.")
@@ -134,11 +134,11 @@ print(count_word_freq(file_path))
 
 #7. Validate email address
 def emailverify(email):
-    if len(email)<5:
+    if len(email) < 5:
         return False
-    if email.count('@')!=1:
+    if email.count('@') != 1:
         return False    
-    username,domain=email.split('@')
+    username,domain = email.split('@')
     if not username or not domain:
         return False
     if '.' not in domain:
@@ -173,31 +173,31 @@ list1 = list(map(lambda x:x**2,num)) #convert to list must
 print(list1)
 
 #adding both
-num1=[1,2,3]
-num2=[4,5,6]
+num1 = [1,2,3]
+num2 = [4,5,6]
 
-added_num=list(map(lambda x,y:x+y,num1,num2))
+added_num = list(map(lambda x,y:x+y,num1,num2))
 print(added_num)
 
 #map() to convert a list of str to int
-str_num=['1','2','3','4']
-int_num=list(map(int, str_num))
+str_num = ['1','2','3','4']
+int_num = list(map(int, str_num))
 print(int_num)
 
 
-words=['apple','banana','cherry']
-upper_word=list(map(str.upper,words))
+words = ['apple','banana','cherry']
+upper_word = list(map(str.upper,words))
 print(upper_word)
 
-"""
+
 def get_name(person):
     return person['name']
 
-people=[
+people = [
     {'name':'Rishav','age':21},
     {'name':'Kaushal','age':20}
 ]
-list12=list(map(get_name,people))
+list12 = list(map(get_name,people))
 print(list12)
 
 
@@ -208,29 +208,27 @@ print(list12)
 def even(num):
     if num%2 == 0 :
         return True
-lst11=[1,2,3,4,5,6,7,8,9,10,11,12,13]
-up_list=list(filter(even,lst11))
+lst11 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+up_list = list(filter(even,lst11))
 print(up_list)
 
-great_lst=list(filter(lambda x:x>5,lst11))
+great_lst = list(filter(lambda x:x>5,lst11))
 print(great_lst)
 
 #filter with lambda and multiple conditions
-num11=[1,2,3,4,5,6,7,8,9,10,11,12,13]
-even_and_greater_than_five=list(filter(lambda x:x>5 and x%2==0, num11))
+num11 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+even_and_greater_than_five = list(filter(lambda x:x>5 and x%2==0, num11))
 print(even_and_greater_than_five)
 
 #filter with dict
-people=[
+people = [
     {'name':'Rishav','age':21},
     {'name':'Kaushal','age':17},
     {'name':'Sagar','age':21}
 ]
 def age_greater_than_18(person):
-    return person['age']>18
-abc=list(filter(age_greater_than_18,people))
+    return person['age'] > 18
+abc = list(filter(age_greater_than_18,people))
 print(abc)
 
 #it is a powerful tool for creating iterators that filter items outt of an iterable based on a func, used for data cleaning, filtering objects, removing unwanted elements from list
-
-"""

@@ -7,22 +7,22 @@ except NameError as ex:
     print(ex) #it print exactly what get on error 
 
 try:
-    r=1/0
+    r = 1/0
 except ZeroDivisionError as zr: #zr is just a alias 
     print(zr)
     print("Please dont divide by zero")
 
 try:
-    r=1/2
-    a=b  # this is not handled so except block no sense
+    r = 1/2
+    a = b  # this is not handled so except block no sense
 except ZeroDivisionError as zr: #zr is just a alias 
     print(zr)
     print("Please dont divide by zero")
 
 try:
-    a=b+c
-except Exception as ee: # this is top class it handle each and every exception
-    print(ee)           # this classs should be at the last befor all zero name etc
+    a = b+c
+except Exception as ex: # this is top class it handle each and every exception
+    print(ex)           # this classs should be at the last befor all zero name etc
     print("main exception caught here.")
 
 ##try, except,else block
