@@ -85,6 +85,7 @@ print(time.time())
 time.sleep(2) # sleep for 2 sec
 print(time.time())
 
+#re library is built in used mostly for pattern matching ie email match bany pattern
 import re # regular expression
 pattern = r'\d+'  #d means here digits 
 text = 'There is some 5 pips'
