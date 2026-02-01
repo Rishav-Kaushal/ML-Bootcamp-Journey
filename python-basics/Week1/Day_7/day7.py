@@ -1,4 +1,4 @@
-'''#Exceptions are events that disruprt the normal flow of a prograam they occur when a error is encountered
+#Exceptions are events that disruprt the normal flow of a prograam they occur when a error is encountered
 #To handle Exceptions 
 
 try:
@@ -39,7 +39,7 @@ else: #this will run only when there is no exception if there is exception handl
     print("Hey, The result is ",result)
 finally: ##this will run always always always #to close the program
     print("Program completed!!")
-'''
+
 ###File Handling and Exception handling
 
 try:
@@ -55,3 +55,10 @@ finally:
     if 'file' in locals() and not file.closed():
         file.close()
         print('file close')
+
+
+
+
+
+
+
