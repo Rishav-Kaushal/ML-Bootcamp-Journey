@@ -27,7 +27,7 @@ except Exception as ex: # this is top class it handle each and every exception
 
 ##try, except,else block
 try:
-    num=int(input("Enter a num:"))
+    num = int(input("Enter a num:"))
     result = 10/num
 except ValueError:
     print("this is not a valid no.")
@@ -46,7 +46,7 @@ try:
     file = open('example.txt','r')
     content = file.read()
     print(content)
-    a=b
+    a = b
 except FileNotFoundError:
     print("File does not found")
 except Exception as ex:
@@ -55,4 +55,3 @@ finally:
     if 'file' in locals() and not file.closed():
         file.close()
         print('file close')
-

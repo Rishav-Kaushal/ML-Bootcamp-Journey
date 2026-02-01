@@ -1,6 +1,5 @@
 #Day6---------Importing_Modules & Packages------------------------------------------
 
-
 import math
 # mathmatically calcu package
 print(math.sqrt(40))
